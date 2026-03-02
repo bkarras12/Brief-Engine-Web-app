@@ -1,0 +1,88 @@
+{
+  "run_id": "run_1709234567",
+  "keyword": "best running shoes for flat feet",
+  "article_type": "comprehensive guide",
+  "stages": {
+    "content_plan": {
+      "article_angle": "Expert guide combining biomechanics research with practical shoe recommendations for runners with flat feet",
+      "target_audience": "Recreational runners aged 25-45 with flat feet or overpronation issues",
+      "search_intent": "commercial",
+      "content_goals": [
+        "Rank for 'best running shoes for flat feet'",
+        "Educate readers on pronation and arch support",
+        "Drive product page traffic for StrideRight Athletics"
+      ],
+      "outline_requirements": {
+        "min_sections": 6,
+        "max_sections": 8,
+        "must_include": ["flat feet biomechanics", "stability vs motion control", "top shoe picks", "fitting tips"],
+        "tone": "friendly-authoritative"
+      },
+      "quality_criteria": {
+        "min_word_count": 1500,
+        "target_word_count": 2000,
+        "readability_target": "8th grade",
+        "seo_keyword_density": "1-2%"
+      }
+    },
+    "research": {
+      "primary_keyword": "best running shoes for flat feet",
+      "search_intent": "commercial",
+      "related_keywords": [
+        "running shoes flat feet",
+        "stability running shoes",
+        "overpronation shoes",
+        "motion control running shoes",
+        "arch support running shoes"
+      ],
+      "long_tail_variations": [
+        "best running shoes for flat feet 2025",
+        "running shoes for severe overpronation",
+        "flat feet running shoes women",
+        "affordable stability running shoes"
+      ],
+      "questions_people_ask": [
+        "Are flat feet bad for running?",
+        "What type of running shoe is best for flat feet?",
+        "Do I need stability shoes if I have flat feet?",
+        "How do I know if I overpronate?",
+        "Can running shoes fix flat feet?"
+      ],
+      "estimated_difficulty": "medium"
+    },
+    "outline": {
+      "recommended_title": "Best Running Shoes for Flat Feet: A Complete 2025 Guide",
+      "sections": 7
+    },
+    "first_draft": {
+      "word_count": 2145,
+      "title": "Best Running Shoes for Flat Feet: A Complete 2025 Guide"
+    },
+    "seo": {
+      "seo_score": 82,
+      "meta_title": "Best Running Shoes for Flat Feet in 2025 | Expert Guide",
+      "meta_description": "Find the perfect running shoes for flat feet. Our expert guide covers stability shoes, motion control options, and fitting tips for overpronators."
+    },
+    "editor": {
+      "quality_score": 85,
+      "changes_made": [
+        "Strengthened introduction hook",
+        "Added transition sentences between sections",
+        "Clarified biomechanics terminology",
+        "Improved conclusion CTA"
+      ],
+      "word_count": 2089
+    }
+  },
+  "final": {
+    "title": "Best Running Shoes for Flat Feet: A Complete 2025 Guide",
+    "meta_title": "Best Running Shoes for Flat Feet in 2025 | Expert Guide",
+    "meta_description": "Find the perfect running shoes for flat feet. Our expert guide covers stability shoes, motion control options, and fitting tips for overpronators.",
+    "word_count": 2089,
+    "read_time_minutes": 8,
+    "seo_score": 82,
+    "quality_score": 85,
+    "article": "[See sample_article.md]"
+  },
+  "pipeline_elapsed_seconds": 47.3
+}
