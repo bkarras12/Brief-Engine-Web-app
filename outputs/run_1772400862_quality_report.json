@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "issues": [
+    "Not enough citations/sources: found 0, need 2+"
+  ],
+  "warnings": [],
+  "scores": {
+    "source_count": 0,
+    "faq_count": 8,
+    "risky_number_sentences": 0
+  }
+}

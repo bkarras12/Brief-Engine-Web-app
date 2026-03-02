@@ -1,0 +1,194 @@
+{
+  "run_id": "run_1772401731",
+  "keyword": "Laptops",
+  "artifact_kind": "social_pack",
+  "stages": {
+    "plan": {
+      "artifact_kind": "social_pack",
+      "search_intent": "informational",
+      "primary_goal": "Engage tech enthusiasts and promote PC Laptops' offerings",
+      "target_audience": "Tech Enthusiasts",
+      "tone": "Jovial",
+      "key_points": [
+        "Latest laptop trends",
+        "Top features to look for in a laptop",
+        "PC Laptops' unique selling propositions",
+        "User testimonials and reviews"
+      ],
+      "cta": "Explore our latest laptops and find your perfect match!",
+      "structure": {
+        "required_sections": [
+          "Engaging visuals of laptops",
+          "Catchy captions highlighting features",
+          "User-generated content and testimonials",
+          "Links to product pages"
+        ],
+        "length_guidance": "5-7 posts with varying formats (images, videos, polls)"
+      },
+      "quality_criteria": {
+        "must_include": [
+          "High-quality images or videos of laptops",
+          "Engaging and relatable captions",
+          "Hashtags relevant to tech and laptops"
+        ],
+        "avoid": [
+          "Overly technical jargon",
+          "Negative comparisons with competitors",
+          "Generic content that doesn't resonate with the audience"
+        ]
+      }
+    },
+    "research": {
+      "primary_keyword": "Laptops",
+      "search_intent": "informational|commercial",
+      "related_keywords": [
+        "best laptops",
+        "laptop reviews",
+        "gaming laptops",
+        "laptop buying guide",
+        "laptop accessories"
+      ],
+      "long_tail_variations": [
+        "best laptops for gaming 2023",
+        "lightweight laptops for travel",
+        "laptops under 1000 dollars"
+      ],
+      "questions_people_ask": [
+        "What are the best laptops for students?",
+        "How to choose a laptop for gaming?",
+        "What is the difference between a laptop and a notebook?",
+        "Which laptop brand is the most reliable?",
+        "What features should I look for in a laptop?"
+      ],
+      "topic_clusters": [
+        {
+          "topic": "Laptop Buying Guide",
+          "subtopics": [
+            "Budget considerations",
+            "Specifications explained",
+            "Brand comparisons"
+          ]
+        },
+        {
+          "topic": "Laptop Reviews",
+          "subtopics": [
+            "Best laptops for gaming",
+            "Best laptops for professionals",
+            "Best budget laptops"
+          ]
+        },
+        {
+          "topic": "Laptop Maintenance and Accessories",
+          "subtopics": [
+            "Best laptop accessories",
+            "How to maintain your laptop",
+            "Upgrading your laptop"
+          ]
+        }
+      ],
+      "key_facts_and_stats": [
+        {
+          "fact": "The global laptop market is projected to reach $120 billion by 2025.",
+          "source_type": "industry report"
+        },
+        {
+          "fact": "Over 50% of consumers use laptops for work and personal use.",
+          "source_type": "study"
+        },
+        {
+          "fact": "Gaming laptops have seen a 20% increase in sales year-over-year.",
+          "source_type": "expert opinion"
+        }
+      ],
+      "content_gaps": [
+        "In-depth comparisons of laptops across different price ranges",
+        "Guides focused on specific user needs (e.g., students, gamers, professionals)",
+        "Latest trends in laptop technology and features"
+      ],
+      "recommended_angle": "Focus on personalized recommendations based on user needs and the latest technological advancements.",
+      "estimated_difficulty": "medium",
+      "web_research": {
+        "enabled": true,
+        "results": [],
+        "top_sources": []
+      }
+    },
+    "draft": {
+      "title": "Social Pack for Laptops",
+      "meta_title": "",
+      "meta_description": "",
+      "word_count": 300,
+      "notes": "Engaging and informative posts tailored for tech enthusiasts, highlighting key features and customer satisfaction."
+    },
+    "guardrails": {
+      "passed": false,
+      "issues": [
+        "Missing required sections (H2): Quick Answer, Key Takeaways, FAQs, Sources",
+        "Not enough citations/sources: found 0, need 2+",
+        "Not enough FAQs: found 0, need 4+"
+      ],
+      "warnings": [
+        "Numeric claims without nearby citations (review): ## LinkedIn  \n### Post 1  \n**Hook:** Are you ready to elevate your tech game? | ### Post 2  \n**Hook:** Confused about which laptop to choose? | ### Post 3  \n**Hook:** Don\u2019t just take our word for it! | #TechTrends #Laptops  \n2. | #GamingLaptops #PCGaming  \n3. | #LaptopReviews #TechCommunity  \n\n## Instagram  \n### Caption 1  \n**Visual Hook:** A sleek new laptop on a desk  \n**Value:** Elevate your productivity with the latest laptop trends! | **Hashtags:** #LaptopTrends #TechEnthusiasts #PCLaptops  \n\n### Caption 2  \n**Visual Hook:** A gamer intensely focused on their laptop  \n**Value:** Level up your gaming experience! | **Hashtags:** #Gaming #LaptopFeatures #PCGaming  \n\n### Caption 3  \n**Visual Hook:** Happy customers with their new laptops  \n**Value:** Join our community of satisfied customers who found their perfect match at PC Laptop"
+      ],
+      "scores": {
+        "source_count": 0,
+        "faq_count": 0,
+        "risky_number_sentences": 8
+      }
+    }
+  },
+  "final": {
+    "artifact_kind": "social_pack",
+    "title": "Social Pack for Laptops",
+    "meta_title": "",
+    "meta_description": "",
+    "content": "[See run_1772401731_primary.md]",
+    "word_count": 300,
+    "read_time_minutes": 1,
+    "seo_score": 0,
+    "quality_score": 0,
+    "readability": {
+      "word_count": 300,
+      "sentence_count": 27,
+      "avg_sentence_length": 11.1,
+      "flesch_reading_ease": 67.8,
+      "flesch_grade_level": 6.6,
+      "filler_phrases": []
+    },
+    "guardrails": {
+      "passed": false,
+      "issues": [
+        "Missing required sections (H2): Quick Answer, Key Takeaways, FAQs, Sources",
+        "Not enough citations/sources: found 0, need 2+",
+        "Not enough FAQs: found 0, need 4+"
+      ],
+      "warnings": [
+        "Numeric claims without nearby citations (review): ## LinkedIn  \n### Post 1  \n**Hook:** Are you ready to elevate your tech game? | ### Post 2  \n**Hook:** Confused about which laptop to choose? | ### Post 3  \n**Hook:** Don\u2019t just take our word for it! | #TechTrends #Laptops  \n2. | #GamingLaptops #PCGaming  \n3. | #LaptopReviews #TechCommunity  \n\n## Instagram  \n### Caption 1  \n**Visual Hook:** A sleek new laptop on a desk  \n**Value:** Elevate your productivity with the latest laptop trends! | **Hashtags:** #LaptopTrends #TechEnthusiasts #PCLaptops  \n\n### Caption 2  \n**Visual Hook:** A gamer intensely focused on their laptop  \n**Value:** Level up your gaming experience! | **Hashtags:** #Gaming #LaptopFeatures #PCGaming  \n\n### Caption 3  \n**Visual Hook:** Happy customers with their new laptops  \n**Value:** Join our community of satisfied customers who found their perfect match at PC Laptop"
+      ],
+      "scores": {
+        "source_count": 0,
+        "faq_count": 0,
+        "risky_number_sentences": 8
+      }
+    },
+    "ai_visibility": {
+      "score": 10,
+      "signals": {
+        "has_quick_answer": false,
+        "has_key_takeaways": false,
+        "has_faqs": false,
+        "has_sources_section": false,
+        "has_lists": true,
+        "has_table": false
+      },
+      "suggestions": [
+        "Add a 'Quick Answer' section near the top (3\u20135 sentences).",
+        "Add 'Key Takeaways' with 5\u20138 bullet points.",
+        "Add an FAQ section with clear Q (H3) / A format.",
+        "Add a 'Sources' section with at least 2\u20133 reputable URLs."
+      ]
+    },
+    "jsonld": {}
+  },
+  "pipeline_elapsed_seconds": 27.5
+}

@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "issues": [
+    "Missing required sections (H2): Quick Answer, Key Takeaways, FAQs, Sources",
+    "Not enough citations/sources: found 0, need 2+",
+    "Not enough FAQs: found 0, need 4+"
+  ],
+  "warnings": [
+    "Numeric claims without nearby citations (review): ## LinkedIn  \n### Post 1  \n**Hook:** Are you ready to elevate your tech game? | ### Post 2  \n**Hook:** Confused about which laptop to choose? | ### Post 3  \n**Hook:** Don\u2019t just take our word for it! | #TechTrends #Laptops  \n2. | #GamingLaptops #PCGaming  \n3. | #LaptopReviews #TechCommunity  \n\n## Instagram  \n### Caption 1  \n**Visual Hook:** A sleek new laptop on a desk  \n**Value:** Elevate your productivity with the latest laptop trends! | **Hashtags:** #LaptopTrends #TechEnthusiasts #PCLaptops  \n\n### Caption 2  \n**Visual Hook:** A gamer intensely focused on their laptop  \n**Value:** Level up your gaming experience! | **Hashtags:** #Gaming #LaptopFeatures #PCGaming  \n\n### Caption 3  \n**Visual Hook:** Happy customers with their new laptops  \n**Value:** Join our community of satisfied customers who found their perfect match at PC Laptop"
+  ],
+  "scores": {
+    "source_count": 0,
+    "faq_count": 0,
+    "risky_number_sentences": 8
+  }
+}

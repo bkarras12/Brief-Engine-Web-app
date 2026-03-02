@@ -1,0 +1,12 @@
+{
+  "score": 90,
+  "signals": {
+    "has_quick_answer": true,
+    "has_key_takeaways": true,
+    "has_faqs": true,
+    "has_sources_section": true,
+    "has_lists": true,
+    "has_table": false
+  },
+  "suggestions": []
+}

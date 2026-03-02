@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "issues": [
+    "Not enough citations/sources: found 0, need 2+"
+  ],
+  "warnings": [
+    "Numeric claims without nearby citations (review): ## Key Takeaways\n- Laptops come in various types, including ultrabooks, gaming laptops, 2-in-1s, and traditional laptops. | Laptops come in various types, including ultrabooks, gaming laptops, 2-in-1s, and traditional laptops, each designed for specific use cases and preferences."
+  ],
+  "scores": {
+    "source_count": 0,
+    "faq_count": 8,
+    "risky_number_sentences": 2
+  }
+}

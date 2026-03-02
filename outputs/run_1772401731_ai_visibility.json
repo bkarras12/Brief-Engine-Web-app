@@ -1,0 +1,17 @@
+{
+  "score": 10,
+  "signals": {
+    "has_quick_answer": false,
+    "has_key_takeaways": false,
+    "has_faqs": false,
+    "has_sources_section": false,
+    "has_lists": true,
+    "has_table": false
+  },
+  "suggestions": [
+    "Add a 'Quick Answer' section near the top (3\u20135 sentences).",
+    "Add 'Key Takeaways' with 5\u20138 bullet points.",
+    "Add an FAQ section with clear Q (H3) / A format.",
+    "Add a 'Sources' section with at least 2\u20133 reputable URLs."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "issues": [
+    "Missing required sections (H2): FAQs",
+    "Not enough citations/sources: found 0, need 2+",
+    "Not enough FAQs: found 0, need 4+"
+  ],
+  "warnings": [
+    "Numeric claims without nearby citations (review): ### What Are the Latest Laptop Trends in 2023? | In 2023, trends include the rise of foldable laptops, increased focus on sustainability, and advancements in AI integration for enhanced user experience. | [Best Laptops Guide](#)\n2."
+  ],
+  "scores": {
+    "source_count": 0,
+    "faq_count": 0,
+    "risky_number_sentences": 3
+  }
+}
