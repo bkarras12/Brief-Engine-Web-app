@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <div class="hd">
+      <h2 style="margin:0">Run: <code>{{ run.run_id }}</code></h2>
+      <div class="small">
+        Keyword: {{ run.keyword }} · Status: {{ run.status }}
+        {% if run.results and (run.results.final.artifact_kind or run.results.artifact_kind) %}
+          · Type: <code>{{ run.results.final.artifact_kind if run.results.final.artifact_kind else run.results.artifact_kind }}</code>
+        {% endif %}
+      </div>
+    </div>
+    <div class="bd">
+      {% if run.results %}
+        <div class="row">
+          <a class="btn secondary" href="/download/{{ run.run_id }}/primary">Primary output (.md)</a>
+          {% if (run.results.final.artifact_kind == "article") or (run.results.artifact_kind == "article") %}
+            <a class="btn secondary" href="/download/{{ run.run_id }}/article">Article (.md)</a>
+          {% endif %}
+          <a class="btn secondary" href="/download/{{ run.run_id }}/results">Results (.json)</a>
+          <a class="btn secondary" href="/download/{{ run.run_id }}/seo_meta">SEO meta (.json)</a>
+          <a class="btn secondary" href="/download/{{ run.run_id }}/quality_report">Quality report (.json)</a>
+          <a class="btn secondary" href="/download/{{ run.run_id }}/ai_visibility">AI visibility (.json)</a>
+          {% if run.results.final.jsonld and run.results.final.jsonld.article_jsonld %}
+            <a class="btn secondary" href="/download/{{ run.run_id }}/schema_article">Article schema (.jsonld)</a>
+          {% endif %}
+          {% if run.results.final.jsonld and run.results.final.jsonld.faq_jsonld %}
+            <a class="btn secondary" href="/download/{{ run.run_id }}/schema_faq">FAQ schema (.jsonld)</a>
+          {% endif %}
+        </div>
+
+        <div class="hr"></div>
+        <h3 style="margin:0 0 10px 0">Primary output (Markdown)</h3>
+        <pre>{{ run.results.final.content if run.results.final.content else run.results.final.article }}</pre>
+      {% else %}
+        <div class="small">No detailed results stored for this run.</div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

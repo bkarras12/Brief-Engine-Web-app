@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <div class="hd">
+      <h2 style="margin:0">Generate an SEO asset</h2>
+      <div class="small">Fill out the basics, then click Generate. Outputs are saved into <code>outputs/</code>.</div>
+    </div>
+    <div class="bd">
+      <form method="post" action="/generate">
+        <div class="grid">
+          <div>
+            <label>Keyword / topic</label>
+            <input type="text" name="keyword" placeholder="e.g., best running shoes for flat feet" required/>
+          </div>
+
+          <div>
+            <label>Asset type</label>
+            <select name="artifact_kind" id="artifact_kind">
+              <option value="article" selected>SEO blog article</option>
+              <option value="landing_page">Landing page (service/offer)</option>
+              <option value="faq_page">FAQ page</option>
+              <option value="content_brief">SEO content brief</option>
+              <option value="meta_pack">Meta title + description pack</option>
+              <option value="social_pack">Social post pack</option>
+              <option value="gbp_post">Google Business Profile post</option>
+            </select>
+          </div>
+
+          <div id="article_type_wrap">
+            <label>Article type (only for blog articles)</label>
+            <select name="article_type">
+              <option value="comprehensive guide">Comprehensive guide</option>
+              <option value="how-to">How-to</option>
+              <option value="comparison">Comparison</option>
+              <option value="listicle">Listicle</option>
+              <option value="local service">Local service</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Company name</label>
+            <input type="text" name="company_name" placeholder="e.g., StrideRight Athletics"/>
+          </div>
+          <div>
+            <label>Industry</label>
+            <input type="text" name="industry" placeholder="e.g., fitness apparel"/>
+          </div>
+          <div>
+            <label>Target audience</label>
+            <input type="text" name="target_audience" placeholder="e.g., recreational runners with flat feet"/>
+          </div>
+          <div>
+            <label>Brand voice</label>
+            <input type="text" name="voice" placeholder="e.g., clear, helpful, practical"/>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <label>Notes (optional)</label>
+          <textarea name="notes" rows="3" placeholder="Any special instructions..."></textarea>
+        </div>
+
+        <details style="margin-top:14px">
+          <summary>Advanced brand profile (optional JSON)</summary>
+          <div class="small" style="margin:8px 0">If provided, JSON overrides the fields above.</div>
+          <textarea name="brand_profile_json" rows="5" placeholder='{"company_name":"...","industry":"...","target_audience":"...","voice":"...","notes":"..."}'></textarea>
+        </details>
+
+        <div class="hr"></div>
+
+        <h3 style="margin:0 0 10px 0">Options</h3>
+        <div class="row">
+          <label class="chk"><input type="checkbox" name="enable_web_research" {% if defaults.enable_web_research %}checked{% endif %}/> Real web research</label>
+          <label class="chk"><input type="checkbox" name="quality_auto_repair" {% if defaults.quality_auto_repair %}checked{% endif %}/> Auto-repair if flagged</label>
+          <label class="chk"><input type="checkbox" name="ai_visibility_enable" {% if defaults.ai_visibility_enable %}checked{% endif %}/> AI visibility scoring</label>
+          <label class="chk"><input type="checkbox" name="ai_visibility_include_jsonld" {% if defaults.ai_visibility_include_jsonld %}checked{% endif %}/> Include JSON-LD schema</label>
+        </div>
+
+        <div style="margin-top:14px">
+          <button class="btn" type="submit">Generate</button>
+          <a class="btn secondary" href="/runs">View past runs</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const sel = document.getElementById("artifact_kind");
+      const wrap = document.getElementById("article_type_wrap");
+      function sync(){
+        const isArticle = (sel.value === "article");
+        wrap.style.display = isArticle ? "block" : "none";
+      }
+      sel.addEventListener("change", sync);
+      sync();
+    })();
+  </script>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+  {% set artifact_kind = result.final.artifact_kind if result.final.artifact_kind else result.artifact_kind %}
+  {% set scored_types = ["article", "landing_page", "faq_page"] %}
+  {% set meta_types = ["article", "landing_page", "faq_page"] %}
+  <div class="card">
+    <div class="hd">
+      <h2 style="margin:0">{{ result.final.title }}</h2>
+      <div class="small">
+        Run ID: <code>{{ result.run_id }}</code> · Keyword: <code>{{ result.keyword }}</code> · Type:
+        <code>{{ artifact_kind }}</code>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="kpi">
+        <div class="pill">Words: <strong>{{ result.final.word_count }}</strong></div>
+        {% if artifact_kind in scored_types %}
+          <div class="pill">SEO score: <strong>{{ result.final.seo_score }}</strong>/100</div>
+          <div class="pill">AI visibility: <strong>{{ result.final.ai_visibility.score }}</strong>/100</div>
+        {% endif %}
+        <div class="pill">
+          Guardrails:
+          {% if result.final.guardrails.passed %}
+            <span class="status-ok">PASS</span>
+          {% else %}
+            <span class="status-bad">FLAGGED</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      {% if artifact_kind in meta_types %}
+        <h3 style="margin:0 0 6px 0">Meta</h3>
+        <div class="small"><strong>Meta title:</strong> {{ result.final.meta_title }}</div>
+        <div class="small" style="margin-top:6px"><strong>Meta description:</strong> {{ result.final.meta_description }}</div>
+
+        <div class="hr"></div>
+      {% endif %}
+
+      <h3 style="margin:0 0 10px 0">Downloads</h3>
+      <div class="row">
+        <a class="btn secondary" href="/download/{{ result.run_id }}/primary">Primary output (.md)</a>
+        {% if artifact_kind == "article" %}
+          <a class="btn secondary" href="/download/{{ result.run_id }}/article">Article (.md)</a>
+        {% endif %}
+        <a class="btn secondary" href="/download/{{ result.run_id }}/results">Results (.json)</a>
+        <a class="btn secondary" href="/download/{{ result.run_id }}/seo_meta">SEO meta (.json)</a>
+        <a class="btn secondary" href="/download/{{ result.run_id }}/quality_report">Quality report (.json)</a>
+        <a class="btn secondary" href="/download/{{ result.run_id }}/ai_visibility">AI visibility (.json)</a>
+        {% if result.final.jsonld and result.final.jsonld.article_jsonld %}
+          <a class="btn secondary" href="/download/{{ result.run_id }}/schema_article">Article schema (.jsonld)</a>
+        {% endif %}
+        {% if result.final.jsonld and result.final.jsonld.faq_jsonld %}
+          <a class="btn secondary" href="/download/{{ result.run_id }}/schema_faq">FAQ schema (.jsonld)</a>
+        {% endif %}
+      </div>
+
+      <div class="hr"></div>
+
+      {% if artifact_kind == "meta_pack" %}
+        <h3 style="margin:0 0 10px 0">Meta Pack</h3>
+      {% elif artifact_kind == "social_pack" %}
+        <h3 style="margin:0 0 10px 0">Social Post Pack</h3>
+      {% elif artifact_kind == "gbp_post" %}
+        <h3 style="margin:0 0 10px 0">Google Business Profile Post</h3>
+      {% elif artifact_kind == "content_brief" %}
+        <h3 style="margin:0 0 10px 0">Content Brief</h3>
+      {% elif artifact_kind == "faq_page" %}
+        <h3 style="margin:0 0 10px 0">FAQ Page</h3>
+      {% elif artifact_kind == "landing_page" %}
+        <h3 style="margin:0 0 10px 0">Landing Page</h3>
+      {% else %}
+        <h3 style="margin:0 0 10px 0">Article</h3>
+      {% endif %}
+      <pre id="primary">{{ result.final.content if result.final.content else result.final.article }}</pre>
+    </div>
+  </div>
+{% endblock %}

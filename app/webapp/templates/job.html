@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <div class="hd">
+      <h2 style="margin:0">Generating…</h2>
+      <div class="small">Job ID: <code>{{ job_id }}</code></div>
+    </div>
+    <div class="bd">
+      <div id="status" class="small">Starting…</div>
+      <div style="margin-top:14px" class="row">
+        <a class="btn secondary" href="/">Start another</a>
+        <a class="btn secondary" href="/runs">Recent runs</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function poll() {
+      const r = await fetch("/api/job/{{ job_id }}");
+      const j = await r.json();
+      const el = document.getElementById("status");
+      if (j.status === "running") {
+        el.textContent = "Running… " + (j.message || "");
+        setTimeout(poll, 2000);
+        return;
+      }
+      if (j.status === "failed") {
+        el.innerHTML = "<span class='status-bad'>Failed:</span> " + (j.error || "Unknown error");
+        return;
+      }
+      if (j.status === "completed") {
+        el.innerHTML = "<span class='status-ok'>Done.</span> Redirecting to results…";
+        setTimeout(() => { window.location.href = "/result/{{ job_id }}"; }, 600);
+        return;
+      }
+      el.textContent = "Unknown status.";
+    }
+    poll();
+  </script>
+{% endblock %}
