@@ -1,4 +1,4 @@
-# BriefEngine — AI Content Pipeline for SMBs
+# BriefEngine - AI Content Pipeline for SMBs
 
 > A multi-agent AI system that produces publish-ready, SEO-optimized blog articles for e-commerce and SaaS businesses. Powered by LangChain + OpenAI.
 
@@ -6,12 +6,12 @@
 
 ## 1. Executive Summary
 
-**BriefEngine** is an AI-native content agency packaged as software. You configure it once with a client's brand voice, target keywords, and audience — then it produces publish-ready SEO blog articles through a coordinated team of 7 AI agents.
+**BriefEngine** is an AI-native content agency packaged as software. You configure it once with a client's brand voice, target keywords, and audience - then it produces publish-ready SEO blog articles through a coordinated team of 7 AI agents.
 
 **Why this business:**
 - Content marketing agencies charge $2,000–$20,000/month (avg ~$3,200/mo for SEO content)
 - SMBs need 4–12 blog posts/month but can't afford agencies or dedicate staff time
-- Existing AI tools (Jasper, Copy.ai) are *writing assistants* — they require constant human input
+- Existing AI tools (Jasper, Copy.ai) are *writing assistants* - they require constant human input
 - BriefEngine is a *configured pipeline*: input keywords → output publish-ready articles
 
 **Target price:** $149/mo (4 articles), $299/mo (8 articles), $499/mo (16 articles)
@@ -21,9 +21,9 @@
 ## 2. Market Research
 
 ### Market Size
-- AI-powered content creation market: ~$2.15B in 2024, projected $10.6B by 2033 (CAGR 19.4%) — Grand View Research
-- AI content generation market growing at 27.3% CAGR to $9.2B by 2031 — Valuates Reports
-- SEO agency retainers average $3,200/mo in 2025 — Digital Agency Network
+- AI-powered content creation market: ~$2.15B in 2024, projected $10.6B by 2033 (CAGR 19.4%) - Grand View Research
+- AI content generation market growing at 27.3% CAGR to $9.2B by 2031 - Valuates Reports
+- SEO agency retainers average $3,200/mo in 2025 - Digital Agency Network
 
 ### Target Customer
 - **Primary:** E-commerce store owners (Shopify, WooCommerce) with 10–500 products
@@ -46,7 +46,7 @@
 | Freelance writers | Service | $100–$500/article | Slow, inconsistent, expensive |
 
 ### Differentiation
-BriefEngine is not a tool — it's a **configured AI content team**. The user provides brand context once, and the system autonomously researches, outlines, writes, optimizes, and delivers publish-ready articles. Think "Jasper + SurferSEO + a content strategist" in one automated pipeline.
+BriefEngine is not a tool - it's a **configured AI content team**. The user provides brand context once, and the system autonomously researches, outlines, writes, optimizes, and delivers publish-ready articles. Think "Jasper + SurferSEO + a content strategist" in one automated pipeline.
 
 ---
 
@@ -297,4 +297,4 @@ class SocialPostWorkflow(BaseWorkflow):
 
 ## License
 
-MIT — use it, extend it, sell it.
+MIT - use it, extend it, sell it.
